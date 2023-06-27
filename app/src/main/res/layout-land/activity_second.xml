@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second_Activity"
+    android:background="@drawable/mainb">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/groupEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            tools:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Name"
+                    android:padding="8dp"
+                    android:textColorHint="#FFA4DDE4"
+                    android:textColor="#FFA4DDE4" />
+
+                <EditText
+                    android:id="@+id/editFullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Fullname"
+                    android:padding="8dp"
+                    android:textColorHint="#FFA4DDE4"
+                    android:textColor="#FFA4DDE4" />
+
+                <EditText
+                    android:id="@+id/editAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColorHint="#FFA4DDE4"
+                    android:textColor="#FFA4DDE4" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Gender"
+                    android:padding="8dp"
+                    android:textColorHint="#FFA4DDE4"
+                    android:textColor="#FFA4DDE4" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColorHint="#FFA4DDE4"
+                    android:textColor="#FFA4DDE4"/>
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="80dp"
+                    android:text="Save"
+                    android:textSize="18sp"
+                    app:backgroundTint="#00C9E3"
+                    app:cornerRadius="30dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupDelete"
+            android:layout_width="740dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible">
+
+            <TextView
+                android:id="@+id/RegisterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Delete meds"
+                android:textColor="#FFA4DDE4"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"/>
+
+            <EditText
+                android:id="@+id/deleteMed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Set medication's name"
+                android:padding="8dp"
+                android:textColorHint="#FFA4DDE4"
+                android:textColor="#FFA4DDE4" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="100dp"
+                android:text="Save"
+                android:textSize="18sp"
+                app:backgroundTint="#00C9E3"
+                app:cornerRadius="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupMedications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            tools:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Medications"
+                android:textAlignment="center"
+                android:textColor="#FFA4DDE4"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"/>
+
+            <EditText
+                android:id="@+id/searchMed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:drawablePadding="8dp"
+                android:hint="Set medication's name"
+                android:padding="8dp"
+                android:textColorHint="#FFA4DDE4"
+                android:textColor="#FFA4DDE4"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/viewMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="View your medication here"
+                        android:textColorHint="#FFA4DDE4"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFA4DDE4"/>
+
+                    <EditText
+                        android:id="@+id/viewTextMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#FFA4DDE4"
+                        android:textSize="14sp"
+                        android:textColor="#FFA4DDE4" />
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Search"
+                android:textSize="18sp"
+                app:backgroundTint="#00C9E3"
+                app:cornerRadius="30dp"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

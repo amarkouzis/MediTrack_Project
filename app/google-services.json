@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "578074470308",
+    "project_id": "meditrack-b8bd7",
+    "storage_bucket": "meditrack-b8bd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578074470308:android:73e7e95bde9bdf7a9e4331",
+        "android_client_info": {
+          "package_name": "pervasivecomputing.example.meditrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578074470308-fedjunibnar82ju0od3b7vackr41covg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAQWUUJMJwE8rE27I3vqrViBvb4n-wQqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578074470308-fedjunibnar82ju0od3b7vackr41covg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

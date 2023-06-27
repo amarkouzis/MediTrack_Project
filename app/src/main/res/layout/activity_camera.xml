@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Camera_Activity"
+    android:background="@drawable/mainb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Take image"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:backgroundTint="#00C9E3"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_add_a_photo_24" />
+
+        <Button
+            android:id="@+id/recognizedTextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="Recognize text"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:backgroundTint="#00C9E3"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_document_scanner_24" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_image_24"
+                android:adjustViewBounds="true"
+                app:strokeWidth="2dp"/>
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Recognized text: "
+                android:textColor="#FFA4DDE4"/>
+
+            <EditText
+                android:id="@+id/medTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColorHint="#FFA4DDE4"
+                android:textColor="#FFA4DDE4"
+                android:hint="Set medication's name here"/>
+
+            <EditText
+                android:id="@+id/recognizedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColorHint="#FFA4DDE4"
+                android:textColor="#FFA4DDE4"
+                android:hint="View your text here"/>
+
+            <Button
+                android:id="@+id/saveTextBtn"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Save your text"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:backgroundTint="#00C9E3"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fmainbackground"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/groupFirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="65dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text="Wellcome to our application!"
+                android:textColor="#A4DDE4"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/already"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="Do you have all ready an account?"
+                android:textSize="18sp"
+                android:textColor="#FFA4DDE4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSignIn"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:onClick="SignIn"
+                app:cornerRadius="30dp"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:backgroundTint="#00C9E3" />
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or, is this your first time here?"
+                android:textColor="#FFA4DDE4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:onClick="SignUp"
+                android:text="Sign Up"
+                app:cornerRadius="30dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:backgroundTint="#00C9E3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            tools:visibility="invisible">
+
+            <TextView
+                android:id="@+id/emptyText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="120dp"
+                android:textColor="#FFA4DDE4"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/myProfile"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:onClick="GoToMyProfile"
+                app:cornerRadius="30dp"
+                android:text="My Medications"
+                app:backgroundTint="#00C9E3"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:onClick="GoToCameraActivity"
+                app:cornerRadius="30dp"
+                android:text="Scan"
+                app:backgroundTint="#00C9E3"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:onClick="GoToSettings"
+                app:cornerRadius="30dp"
+                android:text="Settings"
+                android:layout_marginBottom="100dp"
+                app:backgroundTint="#00C9E3"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

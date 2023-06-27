@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_In_Activity"
+    android:background="@drawable/mainb">
+
+
+    <ScrollView
+        android:id="@+id/scrollIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#FFA4DDE4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/existUser"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:ems="10"
+                android:hint="  Enter Your Username Here"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                android:textColorHint="#FFA4DDE4" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textColor="#FFA4DDE4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/existPass"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:ems="10"
+                android:hint="  Enter Your Password Here"
+                android:inputType="textPassword"
+                android:textColorHint="#FFA4DDE4" />
+
+            <Button
+                android:id="@+id/doneSignIn"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="DoneSignIn"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:backgroundTint="#00C9E3"
+                app:cornerRadius="30dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
